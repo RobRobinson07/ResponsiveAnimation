@@ -1,0 +1,25 @@
+﻿/* ------------ Style sheet for KeepAway.css ------------------------------- */
+/* ------------ reset common attributes margins, borders, etc. ------------- */
+    html, body, canvas { margin: 0;  padding: 0;  border: 0;  position: relative; font-family: sans-serif;}
+    canvas {  display: block;  }
+    html {  background: #e4ccbd;  }
+    h3 {   background-color: #814a33;  color: white;  padding: 0;  margin: 0;  }
+    p {    padding: 0;  margin: 0;  }
+
+/* ---------Set attributes for desktops and laptops (over 700 pixels) ------ */
+@media screen and (min-width: 701px) {
+    body {	width: 700px;  margin: 0 auto;
+    background: #e4ccbd;  border: 2px solid #814a33;   }
+}
+
+/* ---------Set attributes for tablets (481 – 700 pixels) ------------------ */
+@media screen and (min-width: 481px) and (max-width:700px) {
+    body {  margin: 0;  padding: 0;   background: #e4ccbd;
+	 border: 2px solid #814a33;  overflow: hidden;  } 
+}
+
+/* ---------Set attributes for smart phones (480 pixels or less.  ) -------- */
+@media screen and (max-width: 480px) {
+    body {   margin: 0;  padding: 0 0px;   background: #e4ccbd;
+	  border: 2px solid #814a33;  overflow: hidden;  }
+}
